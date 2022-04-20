@@ -1,0 +1,151 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .header{
+        grid-area: header;
+    }
+
+    .main{
+        grid-area: main;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .footer{ 
+        grid-area: footer; 
+        margin-top: 4.8em;
+        border-top: 2px solid #A341FF;
+        text-align: center;
+        background-color: #D1A5FA;
+        height: 3.5em;
+    }
+
+/* estilos navbar general*/
+nav{
+    background-color: #D1A5FA;
+    border-bottom: 2px solid #A341FF;
+}
+
+.navbar-brand{
+    margin: 1em;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.2);
+}
+
+.nav-item{
+    font-weight: bold;
+    padding: 0.5em;
+}
+    
+.nav-item:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* titulos generales*/
+h1{
+    text-align: center;
+    margin: 1em;
+}
+
+/*estilos para main de index*/
+.parrafo-uno{
+    margin: 2.5em;
+    font-size: 1em;
+}
+
+.parrafo-dos{
+    margin: 2.5em;
+    font-size: 1em;
+}
+
+main div a{
+    color: black;
+    text-decoration: none;
+}
+
+img{
+    margin-top: 2em;
+    border: 2px solid;
+    width: 350px;
+    height: 350px;
+}
+
+main div h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*nosotros*/
+.main-nosotros{
+    text-align: center
+}
+
+.div-nosotros{
+    display: flex;
+    padding: 3em;
+    margin-top: 1em;
+}
+
+/*productos*/
+.main-productos{
+    text-align: center;
+}
+
+/*footer's*/
+footer p{
+    margin: 1em;
+    font-weight: bold;
+}
+
+.footer-nosotros{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #A341FF;
+    text-align: center;
+    background-color: #D1A5FA;
+    height: 3.5em;
+}
+
+.footer-productos{
+    margin-top: 2em;
+    border-top: 2px solid #A341FF;
+    text-align: center;
+    background-color: #D1A5FA;
+    height: 3.5em;
+}
+
+.footer-contacto{
+    margin-top: 13.5em;
+    border-top: 2px solid #A341FF;
+    text-align: center;
+    background-color: #D1A5FA;
+    height: 3.5em;
+}
+
+.footer-carrito{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #A341FF;
+    text-align: center;
+    background-color: #D1A5FA;
+    height: 3.5em;
+}
